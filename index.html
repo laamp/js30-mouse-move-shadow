@@ -13,6 +13,13 @@
   </div>
 
   <style>
+    * {
+      transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+    }
+
     html {
       color: black;
       font-family: sans-serif;
@@ -63,9 +70,9 @@
 
       text.style.textShadow = `
         ${xWalk}px ${yWalk}px 0 rgba(140, 11, 214, 0.7),
-        ${-xWalk}px ${yWalk}px 0 rgba(22, 128, 226, 0.7),
+        ${-xWalk}px ${-yWalk}px 0 rgba(22, 128, 226, 0.7),
         ${-yWalk}px ${xWalk}px 0 rgba(27, 233, 62, 0.7),
-        ${-yWalk}px ${-xWalk}px 0 rgba(240, 171, 44, 0.7)
+        ${yWalk}px ${-xWalk}px 0 rgba(240, 171, 44, 0.7)
       `;
 
     }
